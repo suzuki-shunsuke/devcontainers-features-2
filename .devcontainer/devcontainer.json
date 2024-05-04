@@ -7,16 +7,15 @@
     "ghcr.io/eitsupi/devcontainer-features/jq-likes:0": {},
     "ghcr.io/guiyomh/features/vim:0": {}
   },
-
-  "postStartCommand": "npm install && sudo /bin/sh -c 'wget https://github.com/earthly/earthly/releases/latest/download/earthly-linux-amd64 -O /usr/local/bin/earthly && chmod +x /usr/local/bin/earthly && /usr/local/bin/earthly bootstrap --with-autocomplete'",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "earthly.earthfile-syntax-highlighting",
-        "redhat.vscode-yaml",
-        "zxh404.vscode-proto3",
-        "biomejs.biome"
-      ]
-    }
-  }
+  "postStartCommand": "echo postStartCommand && whoami"
+  // "customizations": {
+  //   "vscode": {
+  //     "extensions": [
+  //       "earthly.earthfile-syntax-highlighting",
+  //       "redhat.vscode-yaml",
+  //       "zxh404.vscode-proto3",
+  //       "biomejs.biome"
+  //     ]
+  //   }
+  // }
 }
