@@ -1,0 +1,2 @@
+echo install.sh
+whoami
