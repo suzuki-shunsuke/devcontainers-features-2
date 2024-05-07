@@ -1,7 +1,21 @@
 {
   extends: [
     'github>suzuki-shunsuke/renovate-config#2.4.0',
-    'github>suzuki-shunsuke/renovate-config',
     'github>suzuki-shunsuke/renovate-config:nolimit#2.4.0',
   ],
+  customManagers: [
+      {
+         "customType": "regex",
+         "datasourceTemplate": "github-releases",
+         "depNameTemplate": "aquaproj/aqua",
+         "fileMatch": [
+            "^\\.devcontainer\\.json$",
+            "^\\.devcontainer/devcontainer\\.json$"
+         ],
+         "matchStrings": [
+            " +\"aqua_version\" *: +\"(?<currentValue>[^'\" \\n]+)\""
+         ],
+         "versioningTemplate": "semver"
+      },
+  ]
 }
