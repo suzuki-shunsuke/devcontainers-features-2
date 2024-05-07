@@ -2,26 +2,11 @@
     "name": "aqua-installer",
     "id": "aqua-installer",
     "version": "0.1.0",
-    "description": "Install aqua and packages",
-    "postCreateCommand": "aqua-installer -v $AQUA_VERSION",
-    "postStartCommand": "aqua i -l",
+    "description": "Install aqua",
     "options": {
         "aqua_version": {
             "type": "string",
-            "description": "The version of aqua"
-        },
-        "aqua_opts": {
-            "type": "string",
-            "description": "Command line options of aqua install command",
-            "default": "-l"
-        },
-        "policy_allow": {
-            "type": "boolean",
-            "description": "Whether to run aqua policy allow"
-        },
-        "config_file": {
-            "type": "string",
-            "description": "The configuration file path"
+            "description": "The version of aqua. This option is required"
         }
     }
 }

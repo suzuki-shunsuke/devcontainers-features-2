@@ -2,4 +2,4 @@
 
 set -eu
 
-echo hello
+aqua -v

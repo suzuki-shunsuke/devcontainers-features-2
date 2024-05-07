@@ -4,7 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-from-docker:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/eitsupi/devcontainer-features/jq-likes:0": {},
+    "ghcr.io/eitsupi/devcontainer-features/jq-likes:2.1.0": {},
     "ghcr.io/guiyomh/features/vim:0": {}
   },
   "postStartCommand": "echo postStartCommand && whoami"
