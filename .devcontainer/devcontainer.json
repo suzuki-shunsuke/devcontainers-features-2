@@ -1,13 +1,15 @@
 {
-  "name": "Node.js & TypeScript",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "name": "test",
+  "image": "debian:bookworm-20240423",
   "features": {
-    "ghcr.io/devcontainers/features/docker-from-docker:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/eitsupi/devcontainer-features/jq-likes:2.1.0": {},
-    "ghcr.io/guiyomh/features/vim:0": {}
+    "ghcr.io/suzuki-shunsuke/devcontainers-features-2/aqua-installer:0.1.1": {
+      "aqua_version": "v2.27.0"
+    }
   },
-  "postStartCommand": "echo postStartCommand && whoami"
+  "remoteEnv": {
+    "PATH": "/root/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
+  },
+  "postStartCommand": "aqua -v"
   // "customizations": {
   //   "vscode": {
   //     "extensions": [
