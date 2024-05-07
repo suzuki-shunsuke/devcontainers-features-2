@@ -3,8 +3,6 @@
     "id": "hello",
     "version": "0.1.0",
     "description": "Hello",
-    "postCreateCommand": "echo postCreateCommand && whoami",
-    "postStartCommand": "echo postStartCommand && whoami",
     "options": {
         "aqua_version": {
             "type": "string",

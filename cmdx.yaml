@@ -1,0 +1,10 @@
+---
+# cmdx - task runner
+# https://github.com/suzuki-shunsuke/cmdx
+tasks:
+  - name: test
+    short: t
+    description: test
+    usage: test
+    script: |
+      devcontainer features test

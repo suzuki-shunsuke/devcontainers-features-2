@@ -1,0 +1,12 @@
+{
+    "hello-1": {
+        "build": {
+            "dockerfile": "Dockerfile"
+        },
+        "features": {
+            "hello": {
+                "aqua_version": "v2.27.3"
+            }
+        }
+    }
+}
