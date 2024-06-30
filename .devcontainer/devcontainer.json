@@ -2,7 +2,7 @@
   "name": "test",
   "image": "debian:bookworm-20240423",
   "features": {
-    "ghcr.io/suzuki-shunsuke/devcontainers-features-2/aqua-installer:0.1.0": {
+    "ghcr.io/suzuki-shunsuke/devcontainers-features-2/aqua-installer:0.1.2": {
       "aqua_version": "v2.27.3"
     }
   },
